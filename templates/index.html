@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Processing App</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: 300;
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            width: 80%;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            font-weight: 300;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #video {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Processing App</h1>
+        <form action="/process" method="post" enctype="multipart/form-data">
+            <label for="video1">Upload Video 1:</label>
+            <input type="file" name="video1" accept=".mov">
+
+            <label for="video2">Upload Video 2:</label>
+            <input type="file" name="video2" accept=".mov">
+
+            <label for="book_img">Upload Book Image:</label>
+            <input type="file" name="book_img" accept=".png">
+
+            <button type="submit">Process Videos</button>
+        </form>
+    </div>
+</body>
+</html>
+
