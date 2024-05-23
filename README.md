@@ -20,7 +20,7 @@ Before running the app, ensure you have the following installed:
 1. Clone this repository to your local machine.
 
     ```bash
-    git clone <repository-url>
+    git clone git@github.com:AbdullatifHabiba/Augmented-Reality-with-Planar-Homographies.git
     cd video-processing-app
     ```
 
